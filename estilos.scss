@@ -1,0 +1,363 @@
+$color : #033;
+
+#productos{
+    display: grid;
+    grid-template-areas: 
+    "navv"
+    "main"
+    "footer"
+    ;
+}
+
+.menu{
+    grid-area: navv; 
+}
+
+.contenido{
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+}
+
+
+.footer__descargar{
+    width: 30px;
+    height: 30px;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: row;
+}
+
+.introduccion__texto{
+    width: 50%;
+}
+
+.introduccion__texto__h1{
+    font-size: 3rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: $color;
+}
+
+.introduccion__texto__p{
+    font-size: 1.2rem;
+    width: 50%;
+    margin-left: 17%;
+    margin-right: 33%;
+    color: rgb(61, 61, 61);
+}
+
+
+.introduccion__imagen{
+    width: 50%;
+    background-color: $color;
+}
+
+.introduccion__imagen__img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 480px;
+}
+
+.arg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.transicion{
+    transition: all 0.5s
+}
+
+.transicion:hover{
+    transform: scale(1.1,1.1);
+}
+
+.arg__h2{
+    font-size: 2rem;
+    color: $color;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.arg__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.arg__contenedor__activos{
+    width: 350px;
+    margin-bottom: 50px;
+    border-right: solid 1px $color;
+    margin-top: 5%;
+}
+.arg__contenedor__activos__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #033;
+}
+
+.arg__contenedor__activos__texto{
+    width: 60%;
+    margin-top: 4%;
+}
+
+.eeuu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.eeuu__h2{
+    font-size: 2rem;
+    color: $color;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.eeuu__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eeuu__contenedor__activos{
+    width: 350px;
+    margin-bottom: 50px;
+    border-right: solid 1px $color;
+    margin-top: 5%;
+}
+
+.eeuu__contenedor__activos__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: $color;
+}
+
+.eeuu__contenedor__activos__texto{
+    width: 60%;
+    margin-top: 4%;
+}
+
+.faqs{
+    background-color: $color;
+    height: 550px;
+}
+
+.faqs__h2{
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.accordion-item{
+    background-color: $color;
+}
+
+.accordion-button{
+    background-color: $color;
+    
+}
+
+.acordion-pregunta{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.acordion-respuesta{
+    color: white;
+    font-size: 1rem;
+}
+
+.footer{
+    background-image: linear-gradient(#033,black);
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    list-style:none;
+}
+
+
+.footer__links{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links__linea{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__links__linea__a{
+    width: 49%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+.footer__redes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;;
+}
+
+.footer__redes_iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer__redes__app{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 9%;
+}
+
+.footer__redes__app__p{
+    color: white;
+    margin-right: 5%;
+}
+
+.footer__redes__app__logo{
+    width: 50%;
+}
+
+.footer__redes_iconos__logo{
+    width: 50%;
+}
+
+// BLOG
+
+@mixin display($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+} 
+
+a{
+    text-decoration: none;
+    list-style:none;
+}
+
+.masVisto{
+    background-color: #033 ;
+    @include display(flex, column);
+    padding-bottom: 5%
+}
+
+.masVisto__head{
+    @include display(flex, column);
+    align-items: center;
+}
+
+.masVisto__head__encabezado{
+    color: white;
+    margin-bottom: 2%
+}
+
+.masVisto__head__buscador{
+    @include display(flex, row);
+}
+
+#buscador{
+    width: 500px;
+    height: 20px;
+}
+
+.masVisto__head__buscador__lupa{
+    width: 100%;
+    height: 30px;
+    margin-left: 60%;
+} 
+
+.masvisto__h2{
+    text-align: left;
+    font-size: 30px;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.notasMv{
+    @include display(flex, row);
+    justify-content: space-evenly;
+}
+
+.imagenesNotas{
+    width: 500px;
+    height: 300px;
+}
+
+@each $nombre in invertir, trading {
+    .#{$nombre}__nota { color: white}
+}
+ 
+
+@for $i from 1 through 2 {
+    .notasMv__#{$i} { @include display(flex, column); }
+}
+  
+.categoriaNotas{
+    color: white;
+}
+
+
+.ultimasNotas{
+    @include display(flex, column);
+}
+
+.encabezadoUltimasNotas{
+    color: #033;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-bottom: 2%
+}
+
+.ultimaNota{
+    @include display(flex, row);
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.descripcionNota{
+    width: 50%;
+}
+
+.titularNota{
+    color: black;
+    font-size: 30px;
+}
+
+#textoDescriptivoNota{
+    color:dimgray;
+    font-size: 20px;
+}
+
+.imagenUltimaNota{
+    width: 500px;
+    height: 300px;
+}
+

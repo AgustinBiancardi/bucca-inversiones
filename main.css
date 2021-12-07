@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+
+.menu{
+    grid-area: nav;
+}
+
+.contenido{
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+}
+
+/* ARRANCAN TODOS LOS ESTILOS FLEX PARA LA BARRA DE NAVEGACION */
+
+.descargar{
+    width: 30px;
+    height: 30px;
+}
+
+/* ARRANCAN TODOS LOS ESTILOS FLEX PARA EL CONTENIDO */
+
+/* PRIMERA FILA */
+
+.imagenComputadora{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 480px;
+}
+
+.pri{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenInicioHome{
+    width: 50%;
+    background-color: #033;
+}
+
+.textoInicioHome{
+    width: 50%;
+}
+
+.encabezadoHome{
+    font-size: 3rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: #033;
+}
+
+.textoBienvenidaHome{
+    font-size: 1.2rem;
+    width: 50%;
+    margin-left: 17%;
+    margin-right: 33%;
+    color: rgb(61, 61, 61);
+}
+
+
+/* SEGUNDA FILA */
+
+.segu{
+    display: flex;
+    flex-direction: column; 
+}
+
+.segu_valores{
+    display: flex;
+    flex-direction: row;
+}
+.valores__h2{
+    font-size: 2rem;
+    color: #033;
+    text-align: left;
+    margin-top: 2%;
+
+}
+
+
+.valores{
+    width: 25%;
+    border-right: solid 1px #033;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.transicion{
+    transition: all 0.5s
+}
+
+.transicion:hover{
+    transform: scale(1.1,1.1);
+}
+
+.logoValor{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.tituloValor{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #033;
+}
+
+.bloqueValor{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+}
+
+/* TERCERA FILA */
+
+.tri{
+    display: flex;
+    flex-direction: column;
+    background-color: #033;
+}
+
+.aprende{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+
+.video{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 8%;
+}
+
+/* CUARTA FILA */
+
+.cuar{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenFinalHome{
+    width: 50%;
+    background-color: #033;
+}
+
+.imagenEscalones{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 480px;
+}
+
+.textoFinalHome{
+    width: 50%;
+}
+
+.transforma{
+    font-size: 3rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: #033;
+}
+
+.transformaTexto{
+    font-size: 1.2rem;
+    width: 50%;
+    margin-left: 17%;
+    margin-right: 33%;
+    color: rgb(61, 61, 61);
+}
+
+/* ARRANCAN TODOS LOS ESTILOS FLEX PARA EL FOOTER */
+
+.footer{
+    background-image: linear-gradient(#033,black);
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    list-style:none;
+}
+
+/* PARTE DE LA IZQUIERDA */
+
+.links{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enLinea{
+    display: flex;
+    flex-direction: row;
+}
+
+.enlaceFooter{
+    width: 49%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+/* PARTE DE LA DERECHA */
+
+.redesSociales{
+    width: 50%;
+    display: flex;
+    flex-direction: column;;
+}
+
+.iconesRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.descargaLaApp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 9%;
+}
+
+.descargaApp{
+    color: white;
+    margin-right: 5%;
+}
+
+.logoFooter{
+    width: 50%;
+}
+
+/* Resposive */
+
+/* CELULAR */
+
+@media (max-width:599px){
+
+    /* ARRANCAN TODOS LOS ESTILOS FLEX PARA LA BARRA DE NAVEGACION */
+
+    nav a{
+        width: 18%;
+        font-size: 1.0rem;
+    }
+
+    .logoEmpresa{
+        width: 10%;
+    }
+
+    .barraDeNavegacion{
+        width: 90%;
+    }
+
+    .descargar{
+        display: none;
+    }
+
+    /* ARRANCAN TODOS LOS ESTILOS FLEX PARA EL CONTENIDO */
+
+    /* PRIMERA FILA */
+    .pri{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenInicioHome{
+        width: 100%;
+        background-color: #033;
+    }
+    
+    .textoInicioHome{
+        width: 100%;
+    }
+
+    /* SEGUNDA FILA */
+
+    
+    .segu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .valores{
+        width: 100%;
+        border-bottom: solid 1px #033;
+        border-right: none;
+        padding-bottom: 10%;
+    }
+
+    /* TERCERA FILA */
+
+    .tri{
+        display: none;
+    }
+
+    /* CUARTA FILA */
+
+    .cuar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenFinalHome{
+        width: 100%;
+        background-color: #033;
+    }
+
+    .textoFinalHome{
+        width: 100%;
+        padding-bottom: 5%;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 600px) and (max-width: 1023px){
+
+    /* ARRANCAN TODOS LOS ESTILOS FLEX PARA LA BARRA DE NAVEGACION */
+
+    nav a{
+        width: 18%;
+        font-size: 1.2rem;
+    }
+
+    .logoEmpresa{
+        width: 10%;
+    }
+
+    .barraDeNavegacion{
+        width: 90%;
+    }
+    
+    /* ARRANCAN TODOS LOS ESTILOS FLEX PARA EL CONTENIDO */
+
+    /* PRIMERA FILA */
+    .pri{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenInicioHome{
+        width: 100%;
+        background-color: #033;
+    }
+    
+    .textoInicioHome{
+        width: 100%;
+    }
+
+    /* SEGUNDA FILA */
+
+    
+    .segu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .valores{
+        width: 100%;
+        border-bottom: solid 1px #033;
+        border-right: none;
+        padding-bottom: 10%;
+    }
+
+    /* TERCERA FILA */
+
+    .tri{
+        display: none;
+    }
+
+    /* CUARTA FILA */
+
+    .cuar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenFinalHome{
+        width: 100%;
+        background-color: #033;
+    }
+
+    .textoFinalHome{
+        width: 100%;
+        padding-bottom: 5%;
+    }
+}
+
+/* Acá arranca Box Modeling */
+
+.encabezadoContacto{
+    display: inline;
+    margin-bottom: 70px;
+}
+
+.nombreContacto{
+    display: inline;
+    margin-right: 500px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.emailContacto{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.labelPrimerFila{
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.inputsPrimeraFila{
+    display: block;
+    margin-left: 50px;
+}
+
+.inputNombre{
+    margin-right: 450px;
+}
+
+.labelSegundaFila{
+    display: block;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.numeroContacto{
+    display: inline;
+    margin-right: 500px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.comentarioContacto{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.inputsSegundaFila{
+    display: block;
+    margin-left: 50px;
+}
+
+.inputNumero{
+    margin-right: 450px;
+}
+
+.enviar{
+    background-color: #033;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
