@@ -11,32 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="menuHome">
-        <img src="imagenes/logo.jpg" alt="" class="logo">
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="productos.html"><li>Productos
-            <ul class="submenu">
-                <a href=""><li>Acciones</li></a>
-                <a href=""><li>Bonos</li></a>
-                <a href=""><li>CEDEARs</li></a>
-                <a href=""><li>Fondos</li></a>
-                <a href=""><li>Letras</li></a>
-                <a href=""><li>Licitaciones</li></a>
-            </ul>
-            </li></a>
-            <a href="nosotros.html"><li>Nosotros</li></a>
-            <a href="blog.html"><li>Blog
-                <ul class="submenu">
-                    <a href=""><li>Lo más visto</li></a>
-                    <a href=""><li>Últimas notas</li></a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top menu" style="background-color: white;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" class="img-fluid" width="50px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="productos.html">Argentina</a></li>
+                  <li><a class="dropdown-item" href="productos.html">Estados Unidos</a></li>
                 </ul>
-            </li></a>
-            <a href="contacto.html"><li>Contacto</li></a>
-        </ul> 
-        <a href=""><img src="imagenes/google-play.png" alt="google" class="descargar"></a>
-        <a href=""><img src="imagenes/apple.png" alt="apple" class="descargar"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://play.google.com/store?hl=es_AR&gl=US"><img src="imagenes/google-play.png" alt="google" class="descargar"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.apple.com/la/app-store/"><img src="imagenes/apple.png" alt="apple" class="descargar"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
+    
     <section>
         <h1 class="encabezadoContacto">¿Tenés una consulta? Escribinos.</h1>
         <form>
