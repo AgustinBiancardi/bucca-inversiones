@@ -1,114 +1,146 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Contactate con nosotros | Bucca</title>
-    <meta name="keywords" content="contacto, chat, email, whatsapp">
-    <meta name="description" content="Resolvé tus dudas a través de los distintos medios de comunicación. Estamos para ayudarte en lo que necesites, ¡no lo dudes!"> 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top menu" style="background-color: white;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" class="img-fluid" width="50px" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                  </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="productos.html">Argentina</a></li>
-                  <li><a class="dropdown-item" href="productos.html">Estados Unidos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://play.google.com/store?hl=es_AR&gl=US"><img src="imagenes/google-play.png" alt="google" class="descargar"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.apple.com/la/app-store/"><img src="imagenes/apple.png" alt="apple" class="descargar"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    
-    <section>
-        <h1 class="encabezadoContacto">¿Tenés una consulta? Escribinos.</h1>
-        <form>
-            <section class="labelPrimerFila">
-                <label for="nombre" class="nombreContacto">Nombre</label>
-                <label for="email" class="emailContacto">Email</label>
-            </section>
-            
-            <section class="inputsPrimeraFila">
-                <input type="text" name="nombre" class="inputNombre"> 
-                <input type="email" name="email" class="inputEmail">
-            </section>
-             
-            <section class="labelSegundaFila">
-                <label for="number" class="numeroContacto">Telefono</label>
-                <label for="comentario" class="comentarioContacto">Comentario</label>
-            </section>
-            
-            <section class="inputsSegundaFila">
-                <input type="number" name="telefono" class="inputNumero">
-                <input type="text" name="comentario" class="inputComentario">
-            </section>
-            
 
-            <input type="submit" name="enviar" class="enviar" value="Enviar">    
-        </form>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Contactate con nosotros | Bucca</title>
+  <meta name="keywords" content="contacto, chat, email, whatsapp">
+  <meta name="description"
+    content="Resolvé tus dudas a través de los distintos medios de comunicación. Estamos para ayudarte en lo que necesites, ¡no lo dudes!">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top menu" style="background-color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" class="img-fluid" width="50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="productos.html">Argentina</a></li>
+              <li><a class="dropdown-item" href="productos.html">Estados Unidos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store?hl=es_AR&gl=US"><img src="imagenes/google-play.png"
+                alt="google" class="footer__descargar"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.apple.com/la/app-store/"><img src="imagenes/apple.png" alt="apple"
+                class="footer__descargar"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="formulario">
+    <h1 class="formulario__encabezado">¿Tenés una consulta? Escribinos.</h1>
+    <form class="formulario__form">
+      <section class="formulario__form__pri">
+        <label for="nombre" class="formulario__form__pri__nombre">Nombre</label>
+        <label for="email" class="formulario__form__pri__email">Email</label>
+      </section>
+
+      <section class="formulario__form__seg">
+        <input type="text" name="nombre" class="formulario__form__seg__nombre">
+        <input type="email" name="email" class="formulario__form__seg__email">
+      </section>
+
+      <section class="formulario__form__tri">
+        <label for="number" class="formulario__form__tri__numero">Telefono</label>
+        <label for="comentario" class="formulario__form__tri__comentario">Comentario</label>
+      </section>
+
+      <section class="formulario__form__cua">
+        <input type="number" name="telefono" class="formulario__form__cua__numero">
+        <input type="text" name="comentario" class="formulario__form__cua__comentario">
+      </section>
+
+
+      <input type="submit" name="enviar" class="formulario__form__enviar" value="Enviar">
+    </form>
+  </section>
+
+  <footer class="footer">
+
+    <section class="footer__links">
+      <section class="footer__links__linea">
+        <a href="" class="footer__links__linea__a">
+          <li>Inicio</li>
+        </a>
+        <a href="" class="footer__links__linea__a">
+          <li>Políticas de privacidad y uso</li>
+        </a>
+      </section>
+      <section class="footer__links__linea">
+        <a href="" class="footer__links__linea__a">
+          <li>Asesores</li>
+        </a>
+        <a href="" class="footer__links__linea__a">
+          <li>Programas y beneficios</li>
+        </a>
+      </section>
+      <section class="footer__links__linea">
+        <a href="" class="footer__links__linea__a">
+          <li>Legales</li>
+        </a>
+        <a href="" class="footer__links__linea__a">
+          <li>Códigos de conducta</li>
+        </a>
+      </section>
+      <section class="footer__links__linea">
+        <a href="" class="footer__links__linea__a">
+          <li>Comisiones</li>
+        </a>
+        <a href="" class="footer__links__linea__a">
+          <li>Personal idóneo</li>
+        </a>
+      </section>
     </section>
 
-    <section class="footerHome">
-        <footer class="footer">
-            <section class="primeraLinea">
-                <a href=""><img src="imagenes/logo.jpg" alt="" class="logoFooter"></a>
-                <a href="" class="enlaceFooter pimerColumna"><li>Inicio</li></a>
-                <a href="" class="enlaceFooter segundaColumna"><li>Políticas de privacidad y uso</li></a>
-                <a href=""><img src="imagenes/linkedin.png" alt="" class="logoFooter"></a>
-                <a href=""><img src="imagenes/facebook.png" alt="" class="logoFooter"></a>
-                <a href=""><img src="imagenes/instagram.png" alt="" class="logoFooter"></a>
-            </section>
-    
-            <section class="enLinea">
-                <a href="" class="enlaceFooter primerColumnaDos"><li>Asesores</li></a>
-                <a href="" class="enlaceFooter"><li>Programas y beneficios</li></a>
-            </section>
-            
-            <section class="enLinea">
-                <a href="" class="enlaceFooter primerColumnaDos"><li>Legales</li></a>
-                <a href="" class="enlaceFooter"><li>Códigos de consucta</li></a>
-            </section>
-    
-            <section class="enLinea">
-                <a href="" class="enlaceFooter primerColumnaDos"><li>Comisiones</li></a>
-                <a href="" class="enlaceFooter" id="segundaColumnaDos"><li>Personal idóneo</li></a>
-                <p class="descargaApp">Descargá nuestra app:</p>
-                <a href=""><img src="imagenes/descarga-google-play.png" alt="" class="logoFooter"></a>
-                <a href=""><img src="imagenes/descarga-apple.png" alt="" class="logoFooter"></a>
-            </section>
-            <!-- <a href="https://www.freepik.es/vectores/negocios">Vector de Negocios creado por stories - www.freepik.es</a> -->
-        </footer>
+    <section class="footer__redes">
+      <section class="footer__redes_iconos">
+        <a href=""><img src="imagenes/linkedin.png" alt="" class="footer__redes_iconos__logo"></a>
+        <a href=""><img src="imagenes/facebook.png" alt="" class="footer__redes_iconos__logo"></a>
+        <a href=""><img src="imagenes/instagram.png" alt="" class="footer__redes_iconos__logo"></a>
       </section>
+
+      <section class="footer__redes__app">
+        <p class="footer__redes__app__p">Descargá nuestra app:</p>
+        <a href=""><img src="imagenes/descarga-google-play.png" alt="" class="footer__redes__app__logo"></a>
+        <a href=""><img src="imagenes/descarga-apple.png" alt="" class="footer__redes__app__logo"></a>
+      </section>
+
+    </section>
+    <!-- <a href="https://www.freepik.es/vectores/negocios">Vector de Negocios creado por stories - www.freepik.es</a> -->
+  </footer>
 </body>
+
 </html>

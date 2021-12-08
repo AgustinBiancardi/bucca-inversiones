@@ -361,3 +361,90 @@ a{
     height: 300px;
 }
 
+
+//CONTACTO
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formulario__form__pri{
+    display: block;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.formulario__encabezado{
+    font-size: 3rem;
+    color: $color;
+    padding-top: 1%;
+    margin-left: 1%;
+}
+
+.formulario__form__pri__nombre{
+    display: inline;
+    margin-right: 40%;
+    font-size: 2rem;
+}
+
+.formulario__form__pri__email{
+    font-size: 2rem;
+}
+
+.formulario__form__seg{
+    display: block;
+    margin-left: 50px;
+}
+
+.formulario__form__seg__nombre{
+    width: 30%;  
+    margin-right: 19%;  
+}
+
+.formulario__form__seg__email{
+    width: 30%;    
+}
+
+
+.formulario__form__tri{
+    display: block;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.formulario__form__tri__numero{
+
+    display: inline;
+    margin-right: 40%;
+    font-size: 2rem;
+}
+
+.formulario__form__tri__comentario{
+    font-size: 2rem;
+}
+
+.formulario__form__cua{
+    display: block;
+    margin-left: 4%;
+}
+
+.formulario__form__cua__numero{
+    margin-right: 19%;
+    width: 30%;
+}
+
+.formulario__form__cua__comentario{
+    width: 30%;
+}
+
+.formulario__form__enviar{
+    background-color: #033;
+    color: white;
+    width: 20%;
+    height: 50px;
+    margin-top: 4%;
+    margin-bottom: 100px;
+    margin-left: 4%;
+}
