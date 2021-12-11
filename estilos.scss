@@ -90,6 +90,7 @@ $color : #033;
     color: $color;
     text-align: left;
     margin-bottom: 5%;
+    margin-left: 1%;
 }
 
 .arg__contenedor{
@@ -102,7 +103,6 @@ $color : #033;
 .arg__contenedor__activos{
     width: 350px;
     margin-bottom: 50px;
-    border-right: solid 1px $color;
     margin-top: 5%;
 }
 .arg__contenedor__activos__h3{
@@ -112,8 +112,8 @@ $color : #033;
 }
 
 .arg__contenedor__activos__texto{
-    width: 60%;
     margin-top: 4%;
+    text-align: center;
 }
 
 .eeuu{
@@ -127,6 +127,7 @@ $color : #033;
     color: $color;
     text-align: left;
     margin-bottom: 5%;
+    margin-left: 1%;
 }
 
 .eeuu__contenedor{
@@ -139,7 +140,6 @@ $color : #033;
 .eeuu__contenedor__activos{
     width: 350px;
     margin-bottom: 50px;
-    border-right: solid 1px $color;
     margin-top: 5%;
 }
 
@@ -150,8 +150,8 @@ $color : #033;
 }
 
 .eeuu__contenedor__activos__texto{
-    width: 60%;
     margin-top: 4%;
+    text-align: center;
 }
 
 .faqs{
@@ -447,4 +447,89 @@ a{
     margin-top: 4%;
     margin-bottom: 100px;
     margin-left: 4%;
+}
+
+// CONTACTO
+
+.personal{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.personal__h2{
+    font-size: 2rem;
+    color: #033;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-left: 1%;
+}
+
+.personal__contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.personal__contenedor__usuario{
+    width: 320px;
+    margin-bottom: 50px;
+    margin-top: 5%;
+}
+
+.transicion{
+    transition: all 0.5s
+}
+
+.transicion:hover{
+    transform: scale(1.1,1.1);
+}
+
+.personal__contenedor__usuario__img{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 35%;
+}
+
+.personal__contenedor__usuario__titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #033;
+}
+
+.personal__contenedor__usuario__texto{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.opiniones{
+    @extend .personal
+}
+
+.opiniones__h2{
+    @extend .personal__h2
+}
+
+.opiniones__contenedor{
+    @extend .arg__contenedor
+}
+
+.opiniones__contenedor__opinion{
+    width: 250px;
+    margin-bottom: 50px;
+    margin-top: 5%;
+}
+
+.opiniones__contenedor__opinion__titulo{
+    @extend .personal__contenedor__usuario__titulo
+}
+
+.opiniones__contenedor__opinion__texto{
+    margin-top: 4%;
+    text-align: center;
 }
