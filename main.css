@@ -93,7 +93,8 @@
     font-size: 2rem;
     color: #033;
     text-align: left;
-    margin-top: 2%;
+    margin-top: 6%;
+    margin-left: 1%;
 
 }
 
@@ -101,7 +102,7 @@
 .valores{
     width: 25%;
     border-right: solid 1px #033;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 10%;
 }
 
@@ -414,11 +415,4 @@
         width: 100%;
         padding-bottom: 5%;
     }
-}
-
-/* Acá arranca Box Modeling */
-
-.encabezadoContacto{
-    display: inline;
-    margin-bottom: 70px;
 }

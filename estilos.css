@@ -206,6 +206,8 @@
   color: white;
   text-align: left;
   margin-bottom: 5%;
+  margin-left: 1%;
+  margin-top: 2%;
 }
 
 .accordion-item {
@@ -217,7 +219,7 @@
 }
 
 .acordion-pregunta {
-  color: white;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -357,6 +359,7 @@ a {
 .masVisto__head__encabezado {
   color: white;
   margin-bottom: 2%;
+  font-size: 3rem;
 }
 
 .masVisto__head__buscador {
@@ -382,7 +385,7 @@ a {
 
 .masvisto__h2 {
   text-align: left;
-  font-size: 30px;
+  font-size: 2.5rem;
   margin-left: 1%;
   margin-bottom: 3%;
   color: white;
@@ -408,10 +411,12 @@ a {
 
 .invertir__nota {
   color: white;
+  font-size: 1.5rem;
 }
 
 .trading__nota {
   color: white;
+  font-size: 1.5rem;
 }
 
 .notasMv__1 {
@@ -451,9 +456,10 @@ a {
 .encabezadoUltimasNotas {
   color: #033;
   text-align: left;
-  font-size: 30px;
-  margin-left: 5px;
-  margin-bottom: 2%;
+  font-size: 2.5rem;
+  margin-left: 1%;
+  margin-bottom: 4%;
+  margin-top: 2%;
 }
 
 .ultimaNota {
@@ -476,12 +482,12 @@ a {
 
 .titularNota {
   color: black;
-  font-size: 30px;
+  font-size: 1.7rem;
 }
 
 #textoDescriptivoNota {
   color: dimgray;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .imagenUltimaNota {
