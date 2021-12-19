@@ -88,6 +88,8 @@
 .segu_valores{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .valores__h2{
     font-size: 2rem;

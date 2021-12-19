@@ -52,33 +52,29 @@
       </div>
     </div>
   </nav>
-
+  <h1 class="formulario__encabezado">¿Tenés una consulta? Escribinos.</h1>
   <section class="formulario">
-    <h1 class="formulario__encabezado">¿Tenés una consulta? Escribinos.</h1>
-    <form class="formulario__form">
-      <section class="formulario__form__pri">
-        <label for="nombre" class="formulario__form__pri__nombre">Nombre</label>
-        <label for="email" class="formulario__form__pri__email">Email</label>
-      </section>
+    
 
-      <section class="formulario__form__seg">
-        <input type="text" name="nombre" class="formulario__form__seg__nombre">
-        <input type="email" name="email" class="formulario__form__seg__email">
-      </section>
+    <div class="campo1">
+      <label for="nombre" class="campo__titulo">Nombre</label>
+      <input type="text" name="nombre" class="campo__input">
+    </div>
+    <div class="campo2">
+      <label for="email" class="campo__titulo">Email</label>
+      <input type="email" name="email" class="campo__input">
+    </div>
+    <div class="campo3">
+      <label for="number" class="campo__titulo">Telefono</label>
+      <input type="number" name="telefono" class="campo__input">
+    </div>
+    <div class="campo4">
+      <label for="comentario" class="campo__titulo">Comentario</label>
+      <input type="text" name="comentario" class="campo__input">
+    </div>
 
-      <section class="formulario__form__tri">
-        <label for="number" class="formulario__form__tri__numero">Telefono</label>
-        <label for="comentario" class="formulario__form__tri__comentario">Comentario</label>
-      </section>
+    <input type="submit" name="enviar" class="formulario__form__enviar" value="Enviar">
 
-      <section class="formulario__form__cua">
-        <input type="number" name="telefono" class="formulario__form__cua__numero">
-        <input type="text" name="comentario" class="formulario__form__cua__comentario">
-      </section>
-
-
-      <input type="submit" name="enviar" class="formulario__form__enviar" value="Enviar">
-    </form>
   </section>
 
   <footer class="footer">

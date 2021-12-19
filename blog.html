@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top menu" style="background-color: white;">
+<body id="html">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top menu menub" style="background-color: white;">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="imagenes/logo.jpg" class="img-fluid" width="50px" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -49,60 +49,66 @@
         </div>
       </nav>
 
-    <section class="masVisto">
-        <section class="masVisto__head">
-            <h1 class="masVisto__head__encabezado">Bucca Blog</h1>
-            <section class="masVisto__head__buscador">
-                <input type="text" name="buscador" id="buscador">
-                <a href=""><img src="imagenes/lupa-icono.png" alt="lupa" class="masVisto__head__buscador__lupa"></a>
-            </section>
-        </section>
-
-        <h2 class="masvisto__h2">Lo más visto</h2>
-        <section class="notasMv">
-
-            <a href="">
-                <div class="notasMv__1">
-                    <img src="imagenes/calculadora.jpg" alt="nota1" class="imagenesNotas">
-                    <label class="categoriaNotas">Consejos y Tips</label>
-                    <h3 class="invertir__nota">¿Cómo empezar a invertir?</h3>
-                </div>
-            </a>
-            
-            <a href="">
-                <div class="notasMv__2">
-                    <img src="imagenes/calculos.jpg" alt="nota1" class="imagenesNotas">
-                    <label class="categoriaNotas">Consejos y Tips</label>
-                    <h3 class="trading__nota">¿Cómo introducirse en el trading?</h3>
-                </div>
-            </a>
-        </section>
-    </section>
-
-
-    <section class="ultimasNotas">
-
-        <h2 class="encabezadoUltimasNotas">Últimas notas</h2>
-
-        <a href="">
-            <section class="ultimaNota">
-                <section class="descripcionNota">
-                    <label>Consejos y tips</label>
-                    <h3 class="titularNota">Dólar en Argentina: restricciones y alternativas</h3>
-                    <p id="textoDescriptivoNota">En Argentina el dólar sigue siendo uno de los principales 
-                    termómetros de la economía y el principal refugio para gran
-                    parte del mercado argentino pese a las distintas restricciones 
-                    para acceder al mismo. Tal es así que, de los últimos 10 años,
-                    solo en 3 no existieron restricciones para la compra de la divisa 
-                    a través del mercado único y libre de cambios.</p>
+    <main class="contenidob">
+        <section class="masVisto">
+            <section class="masVisto__head">
+                <h1 class="masVisto__head__encabezado">Bucca Blog</h1>
+                <section class="masVisto__head__buscador">
+                    <input type="text" name="buscador" id="buscador">
+                    <a href=""><img src="imagenes/lupa-icono.png" alt="lupa" class="masVisto__head__buscador__lupa"></a>
                 </section>
-                
-                <img src="imagenes/finanzas.jpg" alt="nota3" class="imagenUltimaNota">
             </section>
-        </a>  
-    </section>
+    
+            <h2 class="masvisto__h2">Lo más visto</h2>
+            <section class="notasMv">
+    
+                <a href="">
+                    <div class="notasMv__1">
+                        <img src="imagenes/calculadora.jpg" alt="nota1" class="imagenesNotas">
+                        <label class="categoriaNotas">Consejos y Tips</label>
+                        <h3 class="invertir__nota">¿Cómo empezar a invertir?</h3>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="notasMv__2">
+                        <img src="imagenes/calculos.jpg" alt="nota1" class="imagenesNotas">
+                        <label class="categoriaNotas">Consejos y Tips</label>
+                        <h3 class="trading__nota">¿Cómo introducirse en el trading?</h3>
+                    </div>
+                </a>
+            </section>
+        </section>
+    
+    
+        <section class="ultimasNotas">
+    
+            <h2 class="encabezadoUltimasNotas">Últimas notas</h2>
+    
+            <a href="">
+                <section class="ultimaNota">
+                    <section class="descripcionNota">
+                        <label>Consejos y tips</label>
+                        <h3 class="titularNota">Dólar en Argentina: restricciones y alternativas</h3>
+                        <p id="textoDescriptivoNota">En Argentina el dólar sigue siendo uno de los principales 
+                        termómetros de la economía y el principal refugio para gran
+                        parte del mercado argentino pese a las distintas restricciones 
+                        para acceder al mismo. Tal es así que, de los últimos 10 años,
+                        solo en 3 no existieron restricciones para la compra de la divisa 
+                        a través del mercado único y libre de cambios.</p>
+                    </section>
+                    <section class="imagenNota">
+                        <img src="imagenes/finanzas.jpg" alt="nota3" class="imagenUltimaNota">
+                    </section>
+                    
+                </section>
+            </a>  
+        </section>
+    </main>
 
-    <footer class="footer">
+    
+
+    <footer class="footer footerb">
 
         <section class="footer__links">
             <section class="footer__links__linea">
